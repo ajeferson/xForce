@@ -17,8 +17,10 @@ int main(void) {
         if (TM_DISCO_ButtonPressed()) {
             /* Turn on leds */
             TM_DISCO_LedOn(LED_RED | LED_GREEN);
+            TM_DISCO_LedOff(LED_ORANGE | LED_BLUE);
         } else {
             /* Turn off leds */
+            TM_DISCO_LedOn(LED_ORANGE | LED_BLUE);
             TM_DISCO_LedOff(LED_RED | LED_GREEN);
         }
     }
